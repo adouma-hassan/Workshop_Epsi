@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision des Réponses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Révision des Réponses</h1>
+        <div id="revision-container"></div>
+        <button id="submit-button">Soumettre</button>
+        <button id="back-button">Retour au Quiz</button>
+    </div>
+
+    <script>
+        const questions = [ /* Copiez ici les questions de votre script.js */ ];
+        let selectedAnswers = []; // Récupérez les réponses sélectionnées de l'objet global
+
+        // Cette fonction est appelée pour afficher les réponses sélectionnées
+        function showRevision() {
+            const revisionContainer = document.getElementById('revision-container');
+            revisionContainer.innerHTML = '';
+
+            questions.forEach((question, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('revision-question');
+
+                questionDiv.innerHTML = `<p><strong>${question.question}</strong></p>`;
+                const answer = selectedAnswers[index];
+
+                if (answer !== null) {
+                    const answerText = question.options.find(option => option.value == answer).text;
+                    questionDiv.innerHTML += `<p>Votre réponse : ${answerText}</p>`;
+                } else {
+                    questionDiv.innerHTML += `<p>Pas de réponse sélectionnée.</p>`;
+                }
+
+                revisionContainer.appendChild(questionDiv);
+            });
+        }
+
+        document.getElementById('submit-button').onclick = () => {
+            // Logique pour soumettre les réponses
+            alert("Réponses soumises !");
+        };
+
+        document.getElementById('back-button').onclick = () => {
+            window.location.href = 'index.html'; // Assurez-vous que le nom du fichier du quiz est correct
+        };
+
+        // Initialiser l'affichage des révisions
+        showRevision();
+    </script>
+</body>
+</html>

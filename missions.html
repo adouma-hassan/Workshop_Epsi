@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missions du Jour</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .return-btn {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .return-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .return-btn:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Missions du Jour</h1>
+    </header>
+
+    <div class="container">
+        <h2>Voici quelques missions à réaliser pour vous sentir mieux :</h2>
+        <ul>
+            <li>Faire une promenade de 30 minutes à l'extérieur.</li>
+            <li>Prendre 10 minutes pour méditer ou pratiquer la pleine conscience.</li>
+            <li>Écrire cinq actions pour lequelles tu t'es dépassé.</li>
+            <li>Appeler un ami ou un membre de la famille pour discuter.</li>
+            <li>Lire un chapitre d'un livre que vous aimez.</li>
+            <li>Préparer un repas sain et équilibré.</li>
+        </ul>
+        
+        <!-- Bouton pour retourner à l'accueil -->
+        <a href="accueil.html">
+            <button class="return-btn">Retour à l'accueil</button>
+        </a>
+    </div>
+</body>
+</html>

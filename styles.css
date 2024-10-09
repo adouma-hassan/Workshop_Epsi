@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Dégradé de bleu ciel et bleu clair */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #f9f9f9; /* Blanc cassé pour un fond doux */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre légère pour de la profondeur */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #3f51b5; /* Bleu profond pour le titre */
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333; /* Texte gris foncé pour lisibilité */
+}
+
+.options {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.3s;
+    background-color: #e3f2fd; /* Fond bleu clair doux */
+    color: #1565c0; /* Texte bleu foncé pour le contraste */
+}
+
+label:hover {
+    background-color: #bbdefb; /* Bleu un peu plus prononcé au survol */
+    transform: scale(1.05);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    background-color: #3f51b5; /* Bleu profond pour le bouton */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #5c6bc0; /* Bleu plus lumineux au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #3f51b5; /* Bordure bleue pour les résultats */
+    background-color: #e8eaf6; /* Fond très léger en bleu/gris */
+    border-radius: 5px;
+    text-align: center;
+    display: none; /* Masqué par défaut */
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}

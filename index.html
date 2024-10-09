@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Dépression</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Styles additionnels pour le bouton */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        .return-btn {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .return-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .return-btn:active {
+            transform: scale(1);
+        }
+
+        .mission-btn {
+            padding: 12px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #e74c3c;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px; /* Ajout d'un espace au-dessus du bouton */
+        }
+
+        .mission-btn:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        .mission-btn:active {
+            transform: scale(1);
+        }
+
+        /* Styles pour le quiz */
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <!-- Bouton stylisé pour retour à l'accueil -->
+                    <a href="accueil.html">
+                        <button class="return-btn">Retour à l'accueil</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Évaluation de l'État de Bien-Être</h1>
+        <div id="quiz">
+            <div id="question"></div>
+            <div class="options" id="options"></div>
+            <div id="progress"></div> <!-- Ajout d'un élément pour afficher la progression -->
+        </div>
+        <div id="result" class="result"></div>
+
+        <!-- Bouton pour accéder aux missions -->
+        <a href="missions.html">
+            <button class="mission-btn">Voir les missions du jour</button>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
