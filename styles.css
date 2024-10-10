@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Dégradé de bleu ciel et bleu clair */
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* Dégradé de vert frais */
     margin: 0;
     padding: 20px;
     color: #333;
@@ -9,23 +9,24 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: #f9f9f9; /* Blanc cassé pour un fond doux */
+    background: white;
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre légère pour de la profondeur */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #3f51b5; /* Bleu profond pour le titre */
+    color: white; /* Gros titre en blanc */
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Légère ombre pour lisibilité */
 }
 
 .question {
     margin-bottom: 20px;
     font-size: 1.5em;
-    color: #333; /* Texte gris foncé pour lisibilité */
+    color: #333; /* Texte des questions en gris foncé */
 }
 
 .options {
@@ -40,12 +41,12 @@ label {
     padding: 12px;
     border-radius: 8px;
     transition: transform 0.2s, background-color 0.3s;
-    background-color: #e3f2fd; /* Fond bleu clair doux */
-    color: #1565c0; /* Texte bleu foncé pour le contraste */
+    background-color: #e8f5e9; /* Fond vert clair pour les options */
+    color: #2e7d32; /* Texte vert foncé pour les options */
 }
 
 label:hover {
-    background-color: #bbdefb; /* Bleu un peu plus prononcé au survol */
+    background-color: #c8e6c9; /* Couleur légèrement plus prononcée au survol */
     transform: scale(1.05);
 }
 
@@ -55,9 +56,9 @@ input[type="radio"] {
 
 button {
     width: 100%;
-    background-color: #3f51b5; /* Bleu profond pour le bouton */
-    color: white;
-    border: none;
+    background-color: white; /* Bouton blanc pour contraste */
+    color: #2e7d32; /* Texte vert foncé */
+    border: 2px solid #2e7d32; /* Bordure vert foncé */
     padding: 15px;
     border-radius: 8px;
     cursor: pointer;
@@ -66,15 +67,37 @@ button {
 }
 
 button:hover {
-    background-color: #5c6bc0; /* Bleu plus lumineux au survol */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+    background-color: #e0f2f1; /* Fond légèrement coloré au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour donner du relief */
+}
+
+/* Style pour les banderoles d'informations */
+.banner-info {
+    background-color: #e8f5e9; /* Vert pastel doux */
+    color: #2e7d32; /* Texte vert foncé */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #81c784; /* Bordure vert plus prononcé */
+    text-align: center;
+}
+
+/* Style pour les banderoles d'avertissement (vert foncé) */
+.banner-warning {
+    background-color: #c8e6c9; /* Vert plus doux pour avertissements */
+    color: #2e7d32; /* Texte vert foncé */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #4caf50; /* Bordure vert plus prononcé */
+    text-align: center;
 }
 
 .result {
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid #3f51b5; /* Bordure bleue pour les résultats */
-    background-color: #e8eaf6; /* Fond très léger en bleu/gris */
+    border: 1px solid #2e7d32; /* Bordure vert foncé */
+    background-color: #e8f5e9; /* Fond vert très clair pour résultats */
     border-radius: 5px;
     text-align: center;
     display: none; /* Masqué par défaut */
